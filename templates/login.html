@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+	<title></title>
+<title></title>
+<link rel="stylesheet" href="{% static 'css/auth_style.css' %}"/>
+</head>
+<body>
+    <div class="box">
+		<div class="inner-box">
+		    <h2>Login</h2>
+            <form method="POST">
+                {% csrf_token %}
+                <input type="text" name="email" placeholder="Email" required/>
+                <input type="password" name="password" placeholder="Password" />
+                <a href="{% url 'login' %}">login</a>
+                <input type="submit" value="Submit" />
+            </form>
+		</div>
+	</div>
+</body>
+</html>

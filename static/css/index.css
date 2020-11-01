@@ -1,0 +1,506 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 98%;
+    height: 100%;
+}
+
+.row
+{
+    margin-left: 10px;
+}
+.row-a
+{
+    margin: 0px;
+}
+
+.nab
+{
+    position: sticky;
+    width: 103%;
+}
+
+.mail-box{
+    margin: 10px ;
+}
+.btn-save
+{
+    width: 100%;
+    text-decoration: none;
+}
+
+.together
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-save-drop
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid honeydew;
+}
+.list-bord
+{
+    border: none;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.fom-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+}
+.dropdown-border
+{
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    box-shadow: 5px 8px 20px -9px #0000005c;
+
+}
+.btn-outline-info {
+    color: rgb(0, 221, 255);
+    border-color: rgba(0, 0, 0, 0.158);
+    border-radius: 1px;
+    border-bottom: none;
+    outline: none;
+}
+.customer-border {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    box-shadow: 5px 5px 20px 0px #0000005c;
+}
+
+option {
+    font-weight: normal;
+    width: 100%;
+    display: block;
+    white-space: pre;
+    min-height: 100px;
+    padding: 0px 2px 1px;
+}
+
+h3
+{
+    font-family: 'Carter One', cursive;
+    font-weight: bold;
+    font-size: 25px;
+}
+.style-text
+{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+.pad
+{
+    margin-top: 15px;
+}
+.fom-item input:hover
+{
+    background-color: honeydew;
+}
+.form-control
+{
+    background-color: none;
+}
+
+.row
+{
+    user-select: none;
+    padding-top: 2px;
+}
+
+
+
+.carousel-caption
+{
+    color: #000
+}
+
+
+/*---------------------MENU CARD-----------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+.menu-list .card1{
+  height: 240px;
+  width: 144px;
+  margin: 10px;
+  color: #000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 20px -6px rgba(0,0,0,0.559); 
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+
+hr{
+    width: 150px;
+    padding-top: 0;
+    height: 4px;
+    background: linear-gradient(to left,#4c00ffb2,#00e1ff);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+}
+
+.icon{
+    color: #8a8a8a;
+    height:0;
+    width:0;
+    margin-left: -25px;
+}
+.icon:hover,.icon1:hover
+{
+    color: #4c8bf5;
+}
+.icon1{
+    color:  #8a8a8a;
+    height: 0;
+    width: 0;
+    margin-right: 25px;
+}
+.carousel-control-prev
+{
+    width: 0%;
+}
+.carousel-control-next
+{
+    width: 0%;
+}
+.fom-item1 {
+  position: relative;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(38, 0, 255, 0.125);
+  border-radius: 10px;
+}
+.menu-list
+{
+  display: flex;
+  justify-content: space-between;
+}
+.dropdown ul
+{
+    overflow:auto;
+    overflow-y: hidden;  
+    white-space: nowrap;
+    
+}
+.fom-item1
+{
+  user-select: none;
+  margin: -1px;
+}
+.card-body .btn
+{
+    height: 35px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 6px;
+    padding: 0px;
+}
+
+.card-body .btn:hover{
+    color: rgb(255, 255, 255);
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+.card1 img
+{
+  max-width:174px;
+  max-height: 150px;
+  min-width: 140px;
+  min-height: 130px;
+  border-radius: 6px;
+  cursor: help;
+  user-select: none;
+}
+.title {
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Piedra', cursive;
+}
+
+.title span
+{
+  float: right;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.back-ground
+{
+    background: #000;
+}
+
+
+
+/*--------------------/MENU CARD-------------------*/
+
+.btn-outline-info
+{
+    color: #000000;
+}
+
+/*-------------------DROPDOWN-------------------*/
+
+.dropdown .bton
+{
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-decoration: inherit;
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+    font-weight: 550;
+    margin-top: 6px;
+    border: 2px solid none;
+    border-image-slice: 1;
+    border-radius: 6px;
+    border-width: 2px;
+    font-family: 'Sansita Swashed', cursive;
+    color: #424242;
+    transition: 0.4s;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap');
+.feat-btn,.feat-btn3,.feat-btn2,.feat-btn4
+{
+    border: 2px solid ;
+    border-radius: 6px;
+    transition: 0.4s ease-in-out;
+}
+
+.bton .I{
+    float: right;
+}
+.bton .I1{
+    float: left;
+}
+
+.brakefast-show
+{
+    display: none;
+}
+.brakefast-show.show
+{
+    display: block;
+}
+.meal-show
+{
+    display: none;
+}
+.meal-show.show1
+{
+    display: block;
+}
+.snack-show
+{
+    display: none;
+}
+.snack-show.show2
+{
+    display: block;
+}
+.dinner-show
+{
+    display: none;
+}
+.dinner-show.show3
+{
+    display: block;
+}
+/*-------------------/DROPDOWN-------------------*/
+
+
+/*----------------------CARD----------------------*/
+.ul-list
+{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 386px;
+    border-radius: 3px;
+}
+
+li
+{
+    display: inline-block;
+}
+.card {
+    position: relative;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.ul-menu
+{
+    padding: 9px;
+}
+.card:hover
+{
+    background-color: honeydew;
+}
+/*----------------------/CARD----------------------*/
+
+
+/*--------------------CART ITEMS------------------*/
+
+.list-cart
+{
+    box-shadow: 2px 2px 15px -2px #888888bd;
+    margin-bottom: 10px;
+}
+table
+{
+    width: 100%;
+}
+.cart-info
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #000;
+    -webkit-text-fill-color: #fff;
+    background: #743ad5 ;
+    font-weight: 500;
+    text-align: center;
+}
+td
+{
+    text-align: center;
+}
+.items{
+    padding: 10px 5px;
+}
+.items input
+{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #1f1f20;;
+}
+.remove
+{
+    padding-left:0 ;
+}
+.p{
+    top: 50%;
+    left: 50%;
+    transform:translate(-10%,30%) ;
+    font-weight: bold;
+}
+
+.btn-danger 
+{
+    width: 70px;;
+    height: 30px;
+}
+.btn
+{
+    color: #fff;
+    font-weight: bold;
+}
+.btn-outline-info
+{
+    color: #000;
+}
+.btn-outline-success
+{
+    color: #000;
+    font-weight: bold;
+    font-family: 'Lobster Two', cursive;
+    border: 2px solid dodgerblue;
+}
+.btn-outline-success:hover
+{
+    background: dodgerblue;
+    border:2px solid dodgerblue;
+}
+.items a{
+    color: #ff523b;
+    font-size: 12px;
+}
+.items img{
+    width: 60px;
+    height: 65px;
+    margin-right: 10px;
+    cursor: help;
+    border-radius: 4px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+small
+{
+    color: #00ff00fd;
+}
+.price
+{
+    font-weight: bold;
+    color: #000000;
+}
+.bto
+{
+    width: 100%;
+    margin-top: 2%;
+}
+.item-main-list
+{
+    border: 1px solid rgba(0, 0, 0, 0.301);
+}
+.dis
+{
+    border: 1px solid rgba(0,0,0,0.4);
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 150px;
+    height: 30px;
+}
