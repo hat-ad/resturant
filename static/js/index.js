@@ -157,3 +157,5 @@ let cardTotal = document
 
   .getElementById("cartTotal")
   .addEventListener("click", updateTotal);
+
+API.post("test", { data: "data" });

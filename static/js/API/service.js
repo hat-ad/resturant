@@ -51,27 +51,28 @@ export default class API {
   }
 
   get(endpoint, params, header) {
-    return this.httpRequest("GET", endpoint, params, header);
+    return this.httpRequest("GET", this.baseUrl + endpoint, params, header);
   }
 
   post(endpoint, params, header) {
-    return this.httpRequest("POST", endpoint, params, header);
+    return this.httpRequest("POST", this.baseUrl + endpoint, params, header);
   }
 
   async httpRequest(method, url, params, header = null) {
     return new Promise((resolve, reject) => {
-      let body,headers;
+      let body, headers;
       if (method == "GET") {
         headers = header;
+        console.log(url);
       } else {
-        headers = { "X-CSRFToken": getCookie("csrftoken") };
+        header = { "X-CSRFToken": getCookie("csrftoken") };
+        // console.log(getCookie("csrftoken"));
         body = JSON.stringify(params);
       }
 
       $.ajax({
         type: method,
         url: url,
-        contentType: "application/json",
         headers: header,
         data: body,
         error: function () {

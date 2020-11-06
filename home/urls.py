@@ -9,13 +9,17 @@ urlpatterns = [
     path('login/', views.login_view, name='login'),
     path('login/', views.logout_view, name='logout'),
     path('register/', views.register_view, name='register'),
-    path('order/<int:table_id>/<int:order_id>/', views.order_view, name='order'),
+    path('order/<int:table_id>/<int:order_id>/',
+         views.order_view, name='order'),
     path('table/', views.table_view, name='table'),
+    path('test', views.testView, name='test'), #testing url for post
     # path('billing/',views.)
 
     # customer details api url
-    path('customer_details_phone/<str:phone>/', views.CustomerDetailsPhone.as_view()),
-    path('customer_details_email/<str:email>/', views.CustomerDetailsEmail.as_view()),
+    path('customer_details_phone/<str:phone>/',
+         views.CustomerDetailsPhone.as_view()),
+    path('customer_details_email/<str:email>/',
+         views.CustomerDetailsEmail.as_view()),
 
     # veg item's api url
     path('veg_breakfast/', views.VegBreakfastItems.as_view()),

@@ -20,7 +20,7 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href={% static 'css/order.css' %}>
+  <link rel="stylesheet" href={% static 'css/index.css' %}>
 
 </head>
 
@@ -98,6 +98,7 @@
   </div>
 
 
+
   <div class="container">
     <!---------------MENU CARD-------------------------------->
     <div class="row">
@@ -113,78 +114,90 @@
           </div>
           <div class="dropdown-border">
             <div class="dropdown">
-              <button class="feat-btn bton"><span><i class="fa fa-caret-down fa-fw I1"></i></span>
-                Breakfast
-                <span><i class="fa fa-caret-down fa-fw I"></i></span></button>
-              <ul class="brakefast-show">
-                <li>
-                  <div class="menu-list" id="breakfast">
-                    <div class="card1">
-                      <img src="https://source.unsplash.com/1600x900/?nature,water" class="card-img-top">
-                      <div class="card-body">
-                        <h5 class="title">Burger<span>2$</span></h5>
-                        <button class="btn btn-success">Add</button>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+              <button class="feat-btn bton" data-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Break Fast
+                <span><i class="fa fa-caret-down fa-fw I"></i></span>
+                <span><i class="fa fa-caret-down fa-fw I1"></i></span>
+              </button>
             </div>
-            <div class="dropdown">
-              <button class="feat-btn2 bton"><span><i class="fa fa-caret-down fa-fw I1"></i></span>
-                MEAL
-                <span><i class="fa fa-caret-down fa-fw I"></i></span></button>
-              <ul class="meal-show">
-                <li>
-                  <div class="menu-list" id="lunch">
-                    <div class="card1">
-                      <img src="https://source.unsplash.com/1600x900/?nature,water" class="card-img-top">
-                      <div class="card-body">
-                        <h5 class="title">Burger<span>2$</span></h5>
-                        <button class="btn btn-success">Add</button>
-                      </div>
-                    </div>
+            <div class="collapse" id="collapseExample">
+              <div class="menu-list">
+                <div class="card1">
+                  <img src="https://source.unsplash.com/1600x900/?nature,water" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="title">Burger<span>2$</span></h5>
+                    <button class="btn btn-success">Add</button>
                   </div>
-                </li>
-              </ul>
-            </div>
-            <div class="dropdown">
-              <button class="feat-btn3 bton"><span><i class="fa fa-caret-down fa-fw I1"></i></span>
-                SNACKS
-                <span><i class="fa fa-caret-down fa-fw I"></i></span></button>
-              <ul class="snack-show">
-                <li>
-                  <div class="menu-list" id="snacks">
-                    <div class="card1">
-                      <img src="https://source.unsplash.com/1600x900/?nature,water" class="card-img-top">
-                      <div class="card-body">
-                        <h5 class="title">Burger<span>2$</span></h5>
-                        <button class="btn btn-success">Add</button>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="dropdown">
-              <button class="feat-btn4 bton"><span><i class="fa fa-caret-down fa-fw I1"></i></span>
-                DINNER
-                <span><i class="fa fa-caret-down fa-fw I"></i></span></button>
-              <ul class="dinner-show">
-                <li>
-                  <div class="menu-list" id="dinner">
-                    <div class="card1">
-                      <img src="https://source.unsplash.com/1600x900/?nature,water" class="card-img-top">
-                      <div class="card-body">
-                        <h5 class="title">Burger<span>2$</span></h5>
-                        <button class="btn btn-success">Add</button>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
+
+          <div class="dropdown-border">
+            <div class="dropdown">
+              <button class="feat-btn bton" data-toggle="collapse" href="#Meal" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Meal
+                <span><i class="fa fa-caret-down fa-fw I"></i></span>
+                <span><i class="fa fa-caret-down fa-fw I1"></i></span>
+              </button>
+            </div>
+            <div class="collapse" id="Meal">
+              <div class="menu-list">
+                <div class="card1">
+                  <img src="https://source.unsplash.com/1600x900/?nature,water" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="title">Burger<span>2$</span></h5>
+                    <button class="btn btn-success">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-border">
+            <div class="dropdown">
+              <button class="feat-btn bton" data-toggle="collapse" href="#snacks" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Snacks
+                <span><i class="fa fa-caret-down fa-fw I"></i></span>
+                <span><i class="fa fa-caret-down fa-fw I1"></i></span>
+              </button>
+            </div>
+            <div class="collapse" id="snacks">
+              <div class="menu-list">
+                <div class="card1">
+                  <img src="https://source.unsplash.com/1600x900/?nature,water" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="title">Burger<span>2$</span></h5>
+                    <button class="btn btn-success">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-border">
+            <div class="dropdown">
+              <button class="feat-btn bton" data-toggle="collapse" href="#dinner" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Dinner
+                <span><i class="fa fa-caret-down fa-fw I"></i></span>
+                <span><i class="fa fa-caret-down fa-fw I1"></i></span>
+              </button>
+            </div>
+            <div class="collapse" id="dinner">
+              <div class="menu-list">
+                <div class="card1">
+                  <img src="https://source.unsplash.com/1600x900/?nature,water" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="title">Burger<span>2$</span></h5>
+                    <button class="btn btn-success">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, HttpResponse
 from django.contrib.auth.views import login_required
 from django.contrib.auth import login, logout
 from django.contrib.auth.models import User
@@ -64,8 +64,9 @@ def forgot_view(request):
         try:
             user = User.objects.get(email=request.POST['email'])
             send_mail('Reset password',
-                      'Reset your password here: http://127.0.0.1:8000/reset/'+str(user.id)+'/',
-                      'subhobasak22@gmail.com', [user.email,])
+                      'Reset your password here: http://127.0.0.1:8000/reset/' +
+                      str(user.id)+'/',
+                      'subhobasak22@gmail.com', [user.email, ])
         except User.DoesNotExist:
             status = 1
     return render(request, 'forgot.html', {'status': status})
@@ -90,7 +91,7 @@ def reset_view(request, uid):
 
 @login_required
 def index_view(request):
-    
+
     # if request.method == 'POST':
     #     print(request.POST)
     return render(request, 'order.html')
@@ -187,3 +188,8 @@ def table_view(request):
                 pass
             return redirect(reverse('table'))
     return render(request, 'table.html', {'tables': tables})
+
+
+def testView(request):
+    print(request.POST)
+    return HttpResponse("test")
