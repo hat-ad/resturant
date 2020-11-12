@@ -127,7 +127,8 @@ const getMenu = async (type) => {
     add[i].addEventListener("click", (e) => getItem(e));
   }
   add[add.length - 1].addEventListener("click", () => {
-    console.log(item);
+    // console.log(item);
+    API.post("test", item); //test url for menu
     // post("billing", item);
   });
 };
@@ -157,5 +158,3 @@ let cardTotal = document
 
   .getElementById("cartTotal")
   .addEventListener("click", updateTotal);
-
-API.post("test", { data: "data" });

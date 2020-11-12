@@ -74,7 +74,7 @@ export default class API {
         type: method,
         url: url,
         headers: header,
-        data: body,
+        data: { data: body },
         error: function () {
           console.log("ERR: Failed to load data from the server");
         },
